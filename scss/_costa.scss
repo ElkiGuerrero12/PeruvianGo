@@ -1,0 +1,138 @@
+
+/*COSTA*/
+/*COSTA*/
+$ancho:100%;
+$BGcolor:#e7e5e1;
+$alto:auto;
+
+.ofertas{
+    width: $ancho;
+    background-color: $BGcolor;
+    height: $alto;  
+    
+}
+
+
+.ofertas__general{
+    display: flex;
+}
+
+.ofertasPrincipaluno{
+    width: $ancho;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.ofertasPrincipal{
+    width: $ancho;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tarjeta__ofertas{
+    position: relative;
+}
+
+.tarjeta__precio{
+    background-color: #f2b30c;
+    border-bottom-right-radius: 12px;
+    color: #2b2b6f;
+    font-family: 'ClanOffc-Bold';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;     
+    padding: 10px; 
+    font-size: 2.6rem;  
+    height: 62px;
+}
+
+.tarjeta__precioAnterior{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.tarjetaOfertas__texto{
+    position: absolute;
+    z-index: 3;
+    top: 133px;
+}
+
+/* CICLO FOR*/
+/* Creado h2 y h3 con font-size*/
+@for $i from 2 through 3{
+    .tarjetaOfertas__texto h#{$i}
+    { font-size: 4.2rem - $i;
+    color: white;}
+}
+
+.tarjetaOfertas__texto__subtitulo{
+   
+    display: block;
+    margin: 5px 0 3px;
+    color: white;
+    text-align: center;
+}
+
+.tarjetaOfertas__texto__titulo{
+    color: white;
+    
+}
+
+
+/*MEDIA QUERIES*/
+
+    /*TABLETS CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 799PX*/
+
+@media (max-width: 799px){
+
+.ofertasPrincipal{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjeta__ofertas{
+    width: $ancho*.40;
+}
+
+}
+
+
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 590PX*/
+
+@media (max-width: 590px){
+
+.tarjeta__ofertas{
+    width: $ancho*.45;
+}
+
+.tarjetaOfertas__texto{
+    top: 75px;
+    }
+
+.tarjeta__precio{
+    font-size: 2.2rem;
+    height: 51px;
+}
+
+}
+
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 572PX*/
+
+@media (max-width: 572px){
+
+.tarjeta__ofertas{
+    width: $ancho*.43;
+    }
+
+}
+

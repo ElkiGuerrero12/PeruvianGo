@@ -1,0 +1,38 @@
+/*GLOBALES*/
+html{
+    font-size: 62.5%; /*TAMAÑO FUENTE PARA USAR REM*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+}
+
+.contenedor{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    
+}
+
+ul{
+    list-style: none; /*QUITA ESTILO A LAS LISTAS*/
+}
+
+a{
+    text-decoration: none;/*QUITA SUBRAYADO ENLACES*/
+    color: white;
+}
+
+p{
+    color:#303030;
+    font-size: 1.6rem;
+}
+

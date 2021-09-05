@@ -1,0 +1,33 @@
+/*INICIO ESTILOS PARA SLIDER
+ BOOSTRAP*/
+
+ .slider-Boo{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider-Boo img{
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+}
+
+.slider-Boo{
+    padding-top: 10px;
+}
+
+.carousel-item h5{
+    color: white;
+    font-size: xx-large;
+    text-shadow: 3px 3px 3px #08090a;
+   
+}
+
+.carousel-caption {
+    top: 183px;
+   
+}
+
+/*FIN ESTILOS PARA SLIDER
+ BOOSTRAP*/

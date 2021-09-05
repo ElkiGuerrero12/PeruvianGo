@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peruvian</title>
+    <!--ESTILOS BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--ESTILOS CON SASS-->
+    <link rel="stylesheet" href="css/destino.css" />
+    <!--ICONOS FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/43f3cc2ec8.js"></script>
+    <!--INICIO GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!--INICIO SEO META DESCRIPTION Y KEYWORDS-->
+    <meta name="description" content="Conoce el Perú! Te invitamos a que viajes y descubras
+     los destinos impresionantes de la Costa, Sierra y Selva que tiene Perú.">
+   <meta name="keywords"  content="Destinos turísticos más visitados, ciudades 
+   de la costa, las mejores playas peruanas, Máncora, machupicchu, Piura, Cajamarca, Chiclayo, amazonas, Trujillo.">
+  </head>
+  <body>
+    <!--INICIO DE CABECERA-->
+    <header>
+      <div class="header-top">
+        <div class="contenedor">
+          <a class="logo" href="index.html"
+            >Peruvian<span id="colorLogo">GO</span></a><!--LOGO O MARCA-->          
+
+          <!--INICIO REDES SOCIALES HOME-->
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/elki.guerrerocastillo/"><i class="fa fa-facebook"></i></a
+              ><!--RED SOCIAL FACEBOOK-->
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a
+              ><!--RED SOCIAL INSTAGRAM-->
+            </li>
+          </ul>
+          <!--ICONO AMBURGUESA-->
+          <i class="js_menu menu fa fa-bars"></i>
+        </div>
+      </div>
+          <!--INICIO NAVEGACIÓN-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="html/costa.html">Costa</a>
+            <ul>
+              <li><a href="./html/mancora.html">Punta Sal</a></li>
+              <li><a href="./html/mancora.html">Máncora</a></li>
+              <li><a href="./html/mancora.html">Lunahuaná</a></li>
+              <li><a href="./html/mancora.html">Huanchaco</a></li>
+              <li><a href="./html/mancora.html">Paracas</a></li>
+              <li><a href="./html/mancora.html">Sipán</a></li>
+            </ul>
+          </li>
+          <li><a href="html/sierra.html">Sierra</a>
+            <ul>
+              <li><a href="./html/machupicchu.html">Machu Picchu</a></li>
+              <li><a href="./html/machupicchu.html">Lago Titicaca</a></li>
+              <li><a href="./html/machupicchu.html">Colca</a></li>
+              <li><a href="./html/machupicchu.html">Nazca</a></li>
+              <li><a href="./html/machupicchu.html">Siete Colores</a></li>
+              <li><a href="./html/machupicchu.html">Cajamarca</a></li>
+            </ul>
+          </li>
+          <li><a href="html/selva.html">Selva</a>
+            <ul>
+              <li><a href="./html/cuelaq.html">Kuélaq</a></li>
+              <li><a href="./html/cuelaq.html">Rio Amazonas</a></li>
+              <li><a href="./html/cuelaq.html">Rupa Rupa</a></li>
+              <li><a href="./html/cuelaq.html">Tarapoto</a></li>
+              <li><a href="./html/cuelaq.html">Gocta</a></li>
+              <li><a href="./html/cuelaq.html">Pucallpa</a></li>
+            </ul></li>
+          <li><a href="html/contactanos.html">Contáctanos</a></li>
+          <li><a href="html/nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>     
+    </header>
+        <!--FIN DE CABECERA-->
+
+    <!--MAIN-->
+    <main>
+      <!--INICIO SECTION SLIDER BOOSTRAP-->
+      <section>
+        <div class="slider-Boo">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/slider-peru3.jpg"
+                  class="d-block w-100"
+                  alt="Machupicchu maravilla del mundo"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5>Machu picchu maravilla del mundo</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/slider-peru2.jpg"
+                  class="d-block w-100"
+                  alt="Tarapoto ciudad maravillosa"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5>Tarapoto paisajes increibles</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/slider-peru4.jpg"
+                  class="d-block w-100"
+                  alt="Las mejores playas peruanas"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5>Las mejores playas están en Perú</h5>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+     
+      <!--INICIO SECTION MENU MOBIL-->
+      <section>       
+        <!--MENU MOBIL-->
+        <div class="menu-mobil">
+          <ul>
+            <li><a href="html/costa.html">Costa</a></li>
+            <li><a href="html/sierra.html">Sierra</a></li>
+            <li><a href="html/selva.html">Selva</a></li>
+          </ul>
+        </div>
+      </section>     
+
+      <!--INICIO SECTION LUGARES MÁS VISITADOS-->
+      <section>
+        <div class="contenedor">
+          <div class="row">
+            <div class="masVisitadosHome">
+              <h1>Los destinos más visitados del Perú</h1>
+              <div class="destinosHome">
+                <article>
+                  <figure>
+                    <a href="./html/machupicchu.html"
+                      ><img src="img/Machu-Picchu.jpg" alt="Machupicchu"
+                    /></a>
+                    <figcaption><h4>Machu picchu</h4></figcaption>
+                  </figure>
+                </article>
+
+                <article>
+                  <figure>
+                    <a href="./html/mancora.html"><img src="img/Mancora.jpg" alt="Máncora" /></a>
+                    <figcaption><h4>Máncora</h4></figcaption>
+                  </figure>
+                </article>
+
+                <article>
+                  <figure>
+                    <a href="./html/cuelaq.html"><img src="img/El-Manu.jpg" alt="El Manu" /></a>
+                    <figcaption><h4>El Manu</h4></figcaption>
+                  </figure>
+                </article>
+                <article>
+                  <figure>
+                    <a href="./html/cuelaq.html"
+                      ><img src="img/Cuelaq-chachapoyas.jpg" alt="Cuelaq"
+                    /></a>
+                    <figcaption><h4>Kuélaq</h4></figcaption>
+                  </figure>
+                </article>
+
+                <article>
+                  <figure>
+                    <a href="./html/mancora.html"><img src="img/Paracas.jpg" alt="Paracas" /></a>
+                    <figcaption><h4>Paracas</h4></figcaption>
+                  </figure>
+                </article>
+
+                <article>
+                  <figure>
+                    <a href="./html/cuelaq.html"
+                      ><img src="img/Lineas-de-Nazca.jpg" alt="Lineas de Nazca"
+                    /></a>
+                    <figcaption><h4>Lineas de Nazca</h4></figcaption>
+                  </figure>
+                </article>
+              </div>
+            </div>
+
+            <div class="publicidad">
+              <h3>Publicidad</h3>
+              <div class="anuncios">
+                <iframe
+                  class="videoAnuncios"
+                  src="https://www.youtube.com/embed/P2t3Hwh37Dw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <h5>Anuncio 1</h5>
+              </div>
+
+              <div class="anuncios">
+                <iframe
+                  class="videoAnuncios"
+                  src="https://www.youtube.com/embed/P2t3Hwh37Dw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <h5>Anuncio 2</h5>
+              </div>
+
+              <div class="anuncios">
+                <iframe
+                  class="videoAnuncios"
+                  src="https://www.youtube.com/embed/P2t3Hwh37Dw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <h5>Anuncio 3</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+          <!--OFERTAS DE VIAJES-->
+      <!--PARA APLICAR OPERACIONES EN SCSS-->
+
+      <section class="ofertas">
+        <h2>
+          Las mejores ofertas para conocer nuestro Perú
+        </h2>
+        <div class="contenedor">
+        
+        <div class="ofertas__general">
+        <div class="ofertasPrincipaluno">
+          <div class="ofertasPrincipal">
+
+            <div class="tarjeta tarjeta__ofertas">
+              <a href="#">
+              <img src="../img/Amazonas-ofertas.jpg" alt="Amazanas">
+              <strong class="tarjeta__precio">
+                S/.190.00
+                <span class="tarjeta__precioAnterior">
+                  antes S/. 250.00
+                </span>
+              </strong>
+              <div class="tarjetaOfertas__texto">
+                <strong class="tarjetaOfertas__texto__subtitulo">
+                  <h3> 02 Dias / 01 Noche</h3> 
+                </strong>
+                <h2 class="tarjetaOfertas__texto__titulo">
+                  Amazonas y sus encantos
+                </h2>
+              </div>
+              </a>              
+            </div>
+
+            <div class="tarjeta tarjeta__ofertas">
+              <a href="#">
+              <img src="../img/Amazonas-ofertas.jpg" alt="Amazanas">
+              <strong class="tarjeta__precio">
+                S/.190.00
+                <span class="tarjeta__precioAnterior">
+                  antes S/. 250.00
+                </span>
+              </strong>
+              <div class="tarjetaOfertas__texto">
+                <strong class="tarjetaOfertas__texto__subtitulo">
+                  <h3> 02 Dias / 01 Noche</h3> 
+                </strong>
+                <h2 class="tarjetaOfertas__texto__titulo">
+                  Amazonas y sus encantos
+                </h2>
+              </div>
+              </a>              
+            </div>
+
+            <div class="tarjeta tarjeta__ofertas">
+              <a href="#">
+              <img src="../img/Amazonas-ofertas.jpg" alt="Amazanas">
+              <strong class="tarjeta__precio">
+                S/.190.00
+                <span class="tarjeta__precioAnterior">
+                  antes S/. 250.00
+                </span>
+              </strong>
+              <div class="tarjetaOfertas__texto">
+                <strong class="tarjetaOfertas__texto__subtitulo">
+                  <h3> 02 Dias / 01 Noche</h3> 
+                </strong>
+                <h2 class="tarjetaOfertas__texto__titulo">
+                  Amazonas y sus encantos
+                </h2>
+              </div>
+              </a>              
+            </div>
+
+            <div class="tarjeta tarjeta__ofertas">
+              <a href="#">
+              <img src="../img/Amazonas-ofertas.jpg" alt="Amazanas">
+              <strong class="tarjeta__precio">
+                S/.190.00
+                <span class="tarjeta__precioAnterior">
+                  antes S/. 250.00
+                </span>
+              </strong>
+              <div class="tarjetaOfertas__texto">
+                <strong class="tarjetaOfertas__texto__subtitulo">
+                  <h3> 02 Dias / 01 Noche</h3> 
+                </strong>
+                <h2 class="tarjetaOfertas__texto__titulo">
+                  Amazonas y sus encantos
+                </h2>
+              </div>
+              </a>              
+            </div>              
+         
+          </div>
+        </div>
+          
+        
+        </div>
+    
+
+      </div>
+      </section>
+      
+      <!--INICIO SECTION NOTICIAS IMPORTANTES-->
+      <!--USANDO BEM-->
+      <section class="seccionDatosImportantes">
+        <h2>Buenas noticias para el turismo peruano</h2>
+        <div class="contenedor">
+          <div class="datosImportantes">
+            <div class="principal">
+              <a href="#">
+              <!--BLOQUE-->
+              <article class="articulo">
+                <figure>
+                  <img src="img/Cuelaq-chachapoyas.jpg" alt="Ruinas de Kuelap" />
+                </figure>
+
+                <div class="articulo__text">
+                  <!--ELEMENTO-->
+                  <h3 class="subtitulo subtitulo--grande">Turismo</h3>
+                  <!--MODIFICADOR-->
+                  <div class="titular">
+                    <p>
+                      446 atractivos turísticos cuentan con el sello Safe
+                      Travels
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </a>
+            </div>
+
+            <div class="principal">
+              <a href="#">
+              <!--BLOQUE-->
+              <article class="articulo">
+                <figure>
+                  <img src="img/Apurimac.jpg" alt="Turismo en Apurimac" />
+                </figure>
+
+                <div class="articulo__text">
+                  <!--BLOQUE-->
+                  <h3 class="subtitulo subtitulo--mediano">Turismo</h3>
+                  <!--MODIFICADOR-->
+                  <div class="titular">
+                    <p>
+                      Mincetur otorga el sello Safe Travels al destino Apurímac
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </a>
+            </div>
+
+            <div class="principal elemento__tres">
+              <a href="#">
+              <!--BLOQUE--><!--TAMBIÉN HACE DE ELEMENTO-->
+              <article class="articulo">
+                <figure>
+                  <img
+                    class="elementoTres--img"
+                    src="img/artesanos-peruanos.jpg"
+                    alt="Artesanias peruanas"
+                  />
+                </figure>
+                <div class="articulo__text">
+                  <!--ELEMENTO-->
+                  <h3 class="subtitulo subtitulo--grande">Turismo</h3>
+                  <!--MODIFICADOR-->
+                  <div class="titular">
+                    <p>
+                      Mincetur premió los proyectos artesanales más innovadores
+                      del Perú
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!--INICIO SECTION FESTIVIDADES-->
+      <section>
+        <div class="contenedor">
+          <div class="festividades">
+            <h2>Principales festividades y eventos culturales de nuestro Perú</h2>
+            <div class="festiEventos">
+              <div class="tarjeta">
+                <a href="#">
+                <!--BLOQUE-->
+                <article>
+                  <img src="./img/VirgenAsunta.jpg" alt="Fiesta patronal de la virgen de Asunta" />
+                </article>
+                <div class="tarjeta__texto">
+                  <!--ELEMENTO-->
+                  <h3>Festividades Patronales de la Virgen Asunta</h3>
+                  <p class="citi citi--colorPurple">Cuzco</p>
+                  <!--MODIFICADOR-->
+                </div>
+              </a>
+              </div>
+
+              <div class="tarjeta">
+                <a href="#">
+                <!--BLOQUE-->
+                <article>
+                  <img src="./img/Virgen-del-Chapi.jpg" alt="Fiesta patronal de la virgen del Virgen-del-Chapi" />
+                </article>
+                <div class="tarjeta__texto">
+                  <!--ELEMENTO-->
+                  <h3>Festividades Patronales de la Virgen del Chapi</h3>
+                  <p class="citi citi--colorVerde">Arequipa</p>
+                  <!--MODIFICADOR-->
+                </div>
+              </a>
+              </div>
+
+              <div class="tarjeta">
+                <a href="#">
+                <!--BLOQUE-->
+                <article>
+                  <img src="./img/Virgen-de-las-mercedes.jpg" alt="Fiesta patronal de la virgen de las Mercedes" />
+                </article>
+                <div class="tarjeta__texto">
+                  <!--ELEMENTO-->
+                  <h3>Festividades Patronales de la Virgen Mercedes</h3>
+                  <p class="citi citi--colorAzul">Piura</p>
+                  <!--MODIFICADOR-->
+                </div>
+              </a>
+              </div>
+
+              <div class="tarjeta">
+                <a href="#">
+                <!--BLOQUE-->
+                <article>
+                  <img src="./img/Virgen-de-la-candelaria.jpg" alt="Fiesta patronal de la Candelaria" />
+                </article>
+                <div class="tarjeta__texto">
+                  <!--ELEMENTO-->
+                  <h3>Festividades Patronales de la Virgen Candelaria</h3>
+                  <p class="citi citi--colorAmarillo">Trujillo</p>
+                  <!--MODIFICADOR-->
+                </div>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--INICIO SECTION BENEFICIOS-->
+      <!--USANDO BEM-->
+      <section>
+        <div class="contenedor">
+          <!--INICIO BLOQUE 1-->
+          <div class="beneficios">
+            <!--BLOQUE-->
+            <div class="beneficios__banner">
+              <!--ELEMENTO-->
+              <article>
+                <img src="img/suscripcion.png" alt="Suscríbete y conoce las maravillas del Perú" />
+              </article>
+            </div>
+
+            <div class="texto__beneficios">
+              <h2>Entérate de las ofertas antes que los demás</h2>
+              <p>
+                Deja tus datos y obtén toda la información para viajar por el
+                Perú.
+              </p>
+              <a class="boton btn--azul" href="#">Suscribirme</a
+              ><!--MODIFICADOR-->
+            </div>
+          </div>
+          <!--FIN BLOQUE 1-->
+
+          <!--INICIO BLOQUE 2-->
+          <div class="beneficios">
+            <!--BLOQUE-->
+            <div class="beneficios__banner">
+              <!--ELEMENTO-->
+              <article>
+                <img src="img/banner-servicios-mobil.jpg" alt="App PeruvianGO" />
+              </article>
+            </div>
+
+            <div class="texto__beneficios">
+              <h2>Descarga nuestra App y obten 50% de descuento</h2>
+              <p>
+                Deja tus datos y obtén toda la información para viajar por el
+                Perú.
+              </p>
+              <a class="boton btn--amarillo" href="#">Entérate Aqui</a
+              ><!--MODIFICADOR-->
+            </div>
+          </div>
+          <!--FIN BLOQUE 2-->
+        </div>
+      </section>
+      
+    </main>
+    <!--FIN DE MAIN-->
+
+    <!--INICIO FOOTER-->
+    <footer>
+      <div class="Copyrigth">
+        <p class="copyrigthTexto">Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <!--LINK JAVASCRIPT-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

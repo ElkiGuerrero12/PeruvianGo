@@ -1,0 +1,179 @@
+/*HEADER
+HEADER*/
+
+header{
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    width: 100%;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*HEADER-TOPP*/
+.header-top{
+    background: linear-gradient(90deg, rgba(10,6,46,1) 0%, rgba(21,21,114,1) 51%, rgba(10,6,46,1) 100%);
+    /*background-color: black;*/
+    height: 45px;
+    padding: 10px;
+    
+}
+
+.logo{
+    color: red;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+#colorLogo{
+    color: white;
+
+}
+
+.header-top ul{
+    display: flex;
+}
+
+.header-top ul li{
+    color: blue;
+    font-size: 1.6rem;
+}
+
+.header-top ul li a{
+    margin-left: 10px;
+}
+
+/*NAVEGACIÓN - MENU PRINCIPAL*/
+
+header nav{
+    height: 48px;
+    background-color: white;
+    
+}
+
+header nav ul{
+    display: flex;
+    padding-top: 10px;
+}
+
+/*lo usé para el submenu*/
+
+header nav ul li a{
+    color: black;
+    font-size: 1.98rem;
+    margin-right: 25px;
+}
+
+/*ICONO HAMBUERGUESA*/
+header .js_menu{
+    color: black;
+    font-size: 2.5rem;
+    display: none;
+  }
+
+/*submenu*/
+/*lo usé para el submenu*/
+header nav ul ul{
+    background-color: black;
+    opacity: 0.64;
+    padding: 4px;
+    position: absolute;
+    display: none;
+    border-radius: 4px;
+    
+}
+
+header nav ul ul li{
+    margin-bottom: 8px;    
+    
+}
+
+header nav ul ul li a{
+    color: white;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+}
+
+/*LO USÉ PARA APARECER SUBMENU*/
+header nav ul li:hover ul{
+    display: block;
+}
+
+/*  MEDIA QUERIES*/
+/*  MEDIA QUERIES*/
+
+/*TABLETS CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 799PX*/
+
+@media (max-width: 799px){
+
+    /*NAVEGACIÓN - MENU PRINCIPAL*/
+
+header nav ul {
+        padding-left: 2rem;
+}
+}
+
+
+/*CELULAREES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 590PX*/
+
+@media (max-width: 590px){
+/*OCULTAR RRSS DEL HEADER TOP*/
+.header-top UL{
+    display: none;
+}
+
+/*OCULTAR EL NAV*/
+header nav{
+    /*display: none;*/
+    position: fixed;
+    z-index: 9;
+    top: 44px;
+    left: 0px;
+    bottom: 0;
+    background: rgba(63, 68, 64, 0.8);
+    transition: all .5s ease;
+    transform: translateX(-100%);
+    transform: translateX(-100%);
+    height: 230px;
+    width: 100%;
+    }
+
+/*ICONO HAMBUERGUESA*/
+header .js_menu{
+     display: block;
+     cursor: pointer;
+     color: white;
+  }
+
+  /*APARECE EL NAV
+  SHOW MENU ES CLASE CREADA
+  CON JAVASCRIPT*/
+.show-menu header nav{
+    transform: translateX(0%)
+}
+/*COLOCAR MENU PRINCIPAL EN BLOCK*/
+header nav ul{
+    display: block;
+}
+
+header nav ul li{
+    margin-bottom: 4px;
+    border-bottom: 2px solid white;
+}
+
+header nav ul li a {
+    color:white;
+    font-size: 1.98rem;
+}
+
+header nav ul ul{
+    left: 100px;
+}
+
+}

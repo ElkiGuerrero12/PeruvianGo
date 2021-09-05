@@ -1,0 +1,55 @@
+/*SOBRE NOSOTROS*/
+.nosotros{
+    display: flex;
+    margin: 20px;
+}
+
+.nosotros-img{
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nosotros-img img{
+    width: 50%;
+}
+
+.nosotros-tex{
+    width: 45%;
+    padding: 30px;
+}
+
+/*MEDIA
+QUERIES*/
+
+@media (max-width: 990px){
+    .nosotros{
+        display: block;
+       
+    }
+
+    .nosotros-tex{
+        width: 100%;
+        
+    }
+    .nosotros-img{
+        width: 100%;
+       
+    }
+
+
+
+}
+
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 572PX*/
+
+@media (max-width: 572px){
+
+    .nosotros-tex{
+      padding: 5px;
+      text-align: center;
+    }
+
+
+}

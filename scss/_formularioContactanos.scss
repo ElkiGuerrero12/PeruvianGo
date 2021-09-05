@@ -1,0 +1,51 @@
+/*FORMULARIO DE CONTÁCTANOS*/
+.form__contenido{
+    width: 830PX;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form__label {
+    flex: 1 1 50%;
+    padding: 15px 5px;
+}
+
+.form__label__titulo{
+    display: block;
+    font-family: 'ClanOffc-News';
+    font-size: 1.125rem;
+    padding-bottom: 5px;
+    max-width: 395px;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    max-width: 395px;
+    height: 51px;
+    border: 1px solid #979797;
+    border-radius: 4px;
+}
+
+.form__input-radios {
+    height: 51px;
+    display: flex;
+    align-items: center;
+}
+
+.form__label__genero{
+    margin: 10px;
+}
+
+.cuadroTexto{
+    width: 100%;
+}
+
+.enviarLimpiar{
+   
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
