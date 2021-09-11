@@ -1,7 +1,79 @@
 /*INICIO FOOTER*/
 
-footer{
-    /*background-color: black;*/
+.footerTop{
+    background-color: #d9d9d9;
+    padding: 10px;
+
+}
+
+.contenedorFooterTop{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navegacionFooter{
+    width: 30%;
+    display: inline-block;
+}
+
+.h5footer{
+    color: #636363;
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    
+}
+
+
+.navegacionFooter{
+    border-left: 3px solid #636363;
+    padding-left: 4px
+}
+
+.navegacionFooter li a{
+    font-size: 18px;
+    color: #636363;
+
+}
+
+.navegacionFooter li :hover{
+    color:#0070BA;
+
+
+}
+
+.logosPeru{
+    border-left: 3px solid #636363;
+    padding-left: 4px
+}
+
+.logosPeru img{
+    margin: 10px;
+}
+
+.redesSosialesFooter{
+    border-left: 3px solid #636363;
+    padding-left: 4px
+}
+
+.redesSosialesFooter ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.redesSosialesFooter li{
+    font-size: 22px;
+    background-color: #636363;
+    width: 31px;
+    text-align: center;
+    border-radius: 14px;
+    margin: 5px;
+}
+
+
+.footerBooton{
+    /*background-color*/
     background: linear-gradient(90deg, rgba(55,47,199,1) 0%, rgba(4,4,6,1) 51%, rgba(21,74,192,1) 100%);
     height: 43px;
     bottom: 0;
@@ -11,4 +83,73 @@ footer{
     color: white;
     padding-top: 8px;
     text-align: center;
+}
+
+
+/*TABLETS CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 1030PX*/
+
+@media (max-width: 1030px){
+
+.h5footer{
+    text-align: center;
+    text-align: center;
+    margin-top: 16px;
+        
+    }
+
+.navegacionFooter{
+    width: 100%;
+    border-left: none;
+    padding-left: none;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+    }
+
+.logosPeru{
+    width: 100%;
+    border-left: none;
+    padding-left: none;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+    }
+
+
+.redesSosialesFooter {
+    width: 100%;
+    border-left: none;
+    padding-left: none;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    
+    .logosImg{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .navegacionFooter ul{
+    display: flex;
+    justify-content: space-evenly
+    }
+
+
+}
+
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 572PX*/
+
+@media (max-width: 572px){
+
+.navegacionFooter ul{
+    display: block;
+}
+
+.navegacionFooter nav{
+    text-align: center;
+}
+
+.logosImg{
+    flex-wrap: wrap;
+}
+
 }

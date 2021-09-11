@@ -3,6 +3,7 @@
 
 .row{
     display: flex;
+    margin-bottom: 2.3rem;
 }
 
 .masVisitadosHome{
@@ -63,7 +64,7 @@
 
 .seccionDatosImportantes{
     margin-bottom: 2.3rem;
-    background-color: rgba(247, 246, 244, 0.74);
+   
 }
 
 .datosImportantes{
@@ -173,6 +174,13 @@
 
 /*SECTION FESTIVIDADES*/
 
+.festividades{
+    width: 100%;
+    background-color: #f7f5f5;
+    height: auto;
+    margin-bottom: 2.3rem;
+}
+
 .festividades h4{
     font-size: 2.3rem;
     text-align: center;
@@ -193,6 +201,7 @@
     overflow: hidden;
     border-radius: 7px;
     margin: 8px;
+    background-color: white;
 }
 
 .tarjeta img{
@@ -296,8 +305,6 @@ MODIFICANDO BOTON*/
 }
 
 
-
-
 /*MEDIA QUERIES*/
 /*MEDIA QUERIES*/
 
@@ -339,6 +346,7 @@ NO SUPERE LOS 990PX*/
     .texto__beneficios h2{
         font-size: 27px;
         padding: 0px 0px;
+        text-shadow: 6px 7px 6px #1a2930;
     }
     
     .texto__beneficios p{
@@ -416,18 +424,7 @@ NO SUPERE LOS 590PX*/
 
 @media (max-width: 590px){
 
-    /*INICIO TRANSITION IMG
-img{
- 
-    transition: height 2s, width 2s;
-}
-
-img:hover{    
-    height: 240px;
-    width: 320px;
-}
-/*FIN TRANSITION IMG */
-
+  
 /*DESTINOS MÁS VISITADOS*/
 .destinosHome article {
     width: 100%;
@@ -474,11 +471,23 @@ NO SUPERE LOS 572PX*/
 .tarjeta{
     width: 98.5%;
     margin: 11px;
-}
-    
+}  
     
         
         }
+
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 380PX*/
+
+ @media (max-width: 380px){
+
+    .texto__beneficios h2{
+        font-size: 22px;
+        line-height: 22px;
+    }
+ }
+
+
 
 
 

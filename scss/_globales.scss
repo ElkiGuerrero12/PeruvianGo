@@ -36,3 +36,29 @@ p{
     font-size: 1.6rem;
 }
 
+/*SEPARADOR DE TÍTULOS*/
+
+.separador{
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    margin-top: -8px;
+}
+
+.separador hr{
+    width: 350px;
+    height: 6px;
+    margin-bottom: 12px;
+    background-color: #efb810;
+    opacity: 1;
+}
+
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 572PX*/
+
+@media (max-width: 572px){
+   .separador hr{
+    width: 210px;
+   }
+
+}

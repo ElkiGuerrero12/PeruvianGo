@@ -1,15 +1,17 @@
 
 /*COSTA*/
 /*COSTA*/
+/*OFERTAS*/
 $ancho:100%;
-$BGcolor:#e7e5e1;
+$BGcolor:#f7f5f5;
 $alto:auto;
 
 .ofertas{
     width: $ancho;
     background-color: $BGcolor;
-    height: $alto;  
-    
+    height: $alto;
+    padding-bottom: 2rem;  
+    margin-bottom: 0.3rem;
 }
 
 
@@ -135,4 +137,34 @@ NO SUPERE LOS 572PX*/
     }
 
 }
+
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 380PX*/
+
+@media (max-width: 380px){
+
+.tarjetaOfertas__texto{
+    top: 60px;
+        }    
+
+.tarjetaOfertas__texto h2{
+    padding-top: 0px;
+}
+
+}
+
+ /*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 325PX*/
+
+@media (max-width: 327px){
+
+    .tarjeta__ofertas {
+        width: $ancho;
+    }
+
+    .tarjetaOfertas__texto {
+        top: 126px;
+    }
+   
+ }
 

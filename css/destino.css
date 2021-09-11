@@ -32,6 +32,26 @@ p {
   color: #303030;
   font-size: 1.6rem; }
 
+/*SEPARADOR DE TÍTULOS*/
+.separador {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  margin-top: -8px; }
+
+.separador hr {
+  width: 350px;
+  height: 6px;
+  margin-bottom: 12px;
+  background-color: #efb810;
+  opacity: 1; }
+
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 572PX*/
+@media (max-width: 572px) {
+  .separador hr {
+    width: 210px; } }
+
 /*TÍTULOS*/
 h1 {
   color: red;
@@ -244,7 +264,8 @@ NO SUPERE LOS 590PX*/
 
 /*INICIO DESTINOS MÁS VISITADOS*/
 .row {
-  display: flex; }
+  display: flex;
+  margin-bottom: 2.3rem; }
 
 .masVisitadosHome {
   width: 85%; }
@@ -290,8 +311,7 @@ NO SUPERE LOS 590PX*/
 /*INICIO NOTICIAS IMPORTANTES*/
 /*USANDO CRID */
 .seccionDatosImportantes {
-  margin-bottom: 2.3rem;
-  background-color: rgba(247, 246, 244, 0.74); }
+  margin-bottom: 2.3rem; }
 
 .datosImportantes {
   width: 100%;
@@ -373,6 +393,12 @@ NO SUPERE LOS 590PX*/
   padding-left: 1rem; }
 
 /*SECTION FESTIVIDADES*/
+.festividades {
+  width: 100%;
+  background-color: #f7f5f5;
+  height: auto;
+  margin-bottom: 2.3rem; }
+
 .festividades h4 {
   font-size: 2.3rem;
   text-align: center;
@@ -390,7 +416,8 @@ NO SUPERE LOS 590PX*/
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 7px;
-  margin: 8px; }
+  margin: 8px;
+  background-color: white; }
 
 .tarjeta img {
   width: 100%; }
@@ -498,7 +525,8 @@ NO SUPERE LOS 990PX*/
     width: 50%; }
   .texto__beneficios h2 {
     font-size: 27px;
-    padding: 0px 0px; }
+    padding: 0px 0px;
+    text-shadow: 6px 7px 6px #1a2930; }
   .texto__beneficios p {
     font-size: 18px;
     margin: 0px 0px; } }
@@ -538,17 +566,6 @@ NO SUPERE LOS 799PX*/
 /*CELULAREES CUANDO EL ANCHO MÁXIMO
 NO SUPERE LOS 590PX*/
 @media (max-width: 590px) {
-  /*INICIO TRANSITION IMG
-img{
- 
-    transition: height 2s, width 2s;
-}
-
-img:hover{    
-    height: 240px;
-    width: 320px;
-}
-/*FIN TRANSITION IMG */
   /*DESTINOS MÁS VISITADOS*/
   .destinosHome article {
     width: 100%; }
@@ -577,9 +594,69 @@ NO SUPERE LOS 572PX*/
     width: 98.5%;
     margin: 11px; } }
 
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 380PX*/
+@media (max-width: 380px) {
+  .texto__beneficios h2 {
+    font-size: 22px;
+    line-height: 22px; } }
+
 /*INICIO FOOTER*/
-footer {
-  /*background-color: black;*/
+.footerTop {
+  background-color: #d9d9d9;
+  padding: 10px; }
+
+.contenedorFooterTop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.navegacionFooter {
+  width: 30%;
+  display: inline-block; }
+
+.h5footer {
+  color: #636363;
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: bold; }
+
+.navegacionFooter {
+  border-left: 3px solid #636363;
+  padding-left: 4px; }
+
+.navegacionFooter li a {
+  font-size: 18px;
+  color: #636363; }
+
+.navegacionFooter li :hover {
+  color: #0070BA; }
+
+.logosPeru {
+  border-left: 3px solid #636363;
+  padding-left: 4px; }
+
+.logosPeru img {
+  margin: 10px; }
+
+.redesSosialesFooter {
+  border-left: 3px solid #636363;
+  padding-left: 4px; }
+
+.redesSosialesFooter ul {
+  display: flex;
+  justify-content: space-around; }
+
+.redesSosialesFooter li {
+  font-size: 22px;
+  background-color: #636363;
+  width: 31px;
+  text-align: center;
+  border-radius: 14px;
+  margin: 5px; }
+
+.footerBooton {
+  /*background-color*/
   background: linear-gradient(90deg, #372fc7 0%, #040406 51%, #154ac0 100%);
   height: 43px;
   bottom: 0; }
@@ -589,12 +666,54 @@ footer {
   padding-top: 8px;
   text-align: center; }
 
+/*TABLETS CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 1030PX*/
+@media (max-width: 1030px) {
+  .h5footer {
+    text-align: center;
+    text-align: center;
+    margin-top: 16px; }
+  .navegacionFooter {
+    width: 100%;
+    border-left: none;
+    padding-left: none;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2); }
+  .logosPeru {
+    width: 100%;
+    border-left: none;
+    padding-left: none;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2); }
+  .redesSosialesFooter {
+    width: 100%;
+    border-left: none;
+    padding-left: none;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2); }
+  .logosImg {
+    display: flex;
+    justify-content: center; }
+  .navegacionFooter ul {
+    display: flex;
+    justify-content: space-evenly; } }
+
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 572PX*/
+@media (max-width: 572px) {
+  .navegacionFooter ul {
+    display: block; }
+  .navegacionFooter nav {
+    text-align: center; }
+  .logosImg {
+    flex-wrap: wrap; } }
+
 /*COSTA*/
 /*COSTA*/
+/*OFERTAS*/
 .ofertas {
   width: 100%;
-  background-color: #e7e5e1;
-  height: auto; }
+  background-color: #f7f5f5;
+  height: auto;
+  padding-bottom: 2rem;
+  margin-bottom: 0.3rem; }
 
 .ofertas__general {
   display: flex; }
@@ -684,48 +803,112 @@ NO SUPERE LOS 572PX*/
   .tarjeta__ofertas {
     width: 43%; } }
 
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 380PX*/
+@media (max-width: 380px) {
+  .tarjetaOfertas__texto {
+    top: 60px; }
+  .tarjetaOfertas__texto h2 {
+    padding-top: 0px; } }
+
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 325PX*/
+@media (max-width: 327px) {
+  .tarjeta__ofertas {
+    width: 100%; }
+  .tarjetaOfertas__texto {
+    top: 126px; } }
+
 /*FORMULARIO DE CONTÁCTANOS*/
 .form__contenido {
-  width: 830PX;
+  width: 60%;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  padding-bottom: 30px; }
+
+::placeholder {
+  font-size: 11px; }
 
 .form__label {
-  flex: 1 1 50%;
-  padding: 15px 5px; }
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px; }
 
 .form__label__titulo {
-  display: block;
-  font-family: 'ClanOffc-News';
-  font-size: 1.125rem;
-  padding-bottom: 5px;
-  max-width: 395px; }
+  display: inline-block;
+  font-size: 17px;
+  padding-bottom: 3px; }
 
 .form__input {
   display: block;
   width: 100%;
-  max-width: 395px;
-  height: 51px;
+  height: 45px;
   border: 1px solid #979797;
   border-radius: 4px; }
 
 .form__input-radios {
   height: 51px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  /*justify-content: space-between;*/ }
 
 .form__label__genero {
-  margin: 10px; }
+  margin: 10px;
+  font-size: 14px; }
 
 .cuadroTexto {
+  width: 100%; }
+
+textarea {
   width: 100%; }
 
 .enviarLimpiar {
   font-size: 14px;
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-align: center; }
+
+.submit {
+  width: 25%;
+  margin: 10px; }
+
+.reset {
+  width: 25%;
+  margin: 10px; }
+
+/*SECTION CONTACTO*/
+.contactoGeneral {
+  height: 3rem;
+  position: fixed;
+  bottom: 25px;
+  z-index: 100;
+  left: 0px;
+  width: 100%; }
+
+.contacto ul {
+  display: flex;
+  justify-content: space-around; }
+
+.contacto ul li {
+  font-size: 2.3rem;
+  background-color: #33b733;
+  width: 5rem;
+  height: 4rem;
+  border-radius: 5px;
+  text-align: center;
+  padding: .4rem; }
+
+/*MEDIA QUERIES*/
+/*CELULAREES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 590PX*/
+@media (max-width: 590px) {
+  .form__contenido {
+    width: 80%; } }
+
+/*CELULARES CUANDO EL ANCHO MÁXIMO
+NO SUPERE LOS 572PX*/
+@media (max-width: 572px) {
+  .contacto ul {
+    justify-content: space-between; } }
 
 /*SOBRE NOSOTROS*/
 .nosotros {
@@ -757,12 +940,15 @@ QUERIES*/
 /*CELULARES CUANDO EL ANCHO MÁXIMO
 NO SUPERE LOS 572PX*/
 @media (max-width: 572px) {
+  .nosotros {
+    margin: 5px; }
   .nosotros-tex {
     padding: 5px;
     text-align: center; } }
 
+/*SECCIÓN INFORMACIÓN DESTINOS*/
 .informacionDestinos {
-  padding: 0px 50px 0px 50px; }
+  padding: 0px 10px 0px 10px; }
 
 .informacionText {
   padding-bottom: 10px;
